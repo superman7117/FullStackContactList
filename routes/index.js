@@ -4,7 +4,7 @@ var fs = require('fs');
 /* GET users listing. */
 
 router.get('/', function(req,res){
-    res.render('./index', {title: "Add Users"})
+  res.render('./index', {title: "Add Users"})
 })
 
 

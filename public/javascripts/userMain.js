@@ -7,9 +7,11 @@ function init(){
 }
 
 function sendItemUserPage(){
-  var index = $(this).closest('.row').index();
-  console.log('index', index);
-  $.post('/users', {index: index})
+  var test = $(this).closest('.row').index();
+  console.log('index', test);
+  $.post('/users', {
+    newUser: test
+  })
   .done(function(data){
     console.log(data);
   })
