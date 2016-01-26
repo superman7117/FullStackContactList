@@ -12,6 +12,11 @@ a, input,button {
   margin: 2vw;
 }
 
+a, button {
+  background-color: black;
+  border: .2vw solid #00B7FF;
+}
+
 .container {
   background-color: oldlace;
   display: flex;
