@@ -1,8 +1,38 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightgrey;
 }
 
-a {
+a, input,button {
   color: #00B7FF;
+  background-color: oldlace;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.container {
+  background-color: oldlace;
+  display: flex;
+  justify-content: center;;
+  flex-direction: column;
+}
+
+.row{
+  background-color: oldlace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: dodgerblue;
+}
+
+h3 {
+  color: red;
 }

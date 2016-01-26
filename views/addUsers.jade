@@ -8,9 +8,12 @@ block content
   br
   br
   .container
-    each val in user
+    each val, index in user
       .row
-        a(class="userLink", href="/users")= val.user
+        a(class="userLink", href='/users/#{index}' )= val.user
+        .theEmail= val.email
+        .thePhone= val.phone
+        button(class="delete") Delete
       
       
       

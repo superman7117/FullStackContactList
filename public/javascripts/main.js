@@ -9,7 +9,13 @@ function init(){
 function sendItemToListPage(){
   console.log('the button works');
   var newListItem = $('#inputer').val();
-  $.post('/addUsers', {newUser: newListItem})
+  var newEmailItem = $('#email').val();
+  var newPhoneItem = $('#phone').val();
+  $.post('/users/adduser', {
+    newUser: newListItem,
+    newEmail: newEmailItem,
+    newPhone: newPhoneItem
+  })
   .done(function(data){
     console.log(data);
   })
