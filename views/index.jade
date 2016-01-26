@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  input(id='inputer' type='text')
+  br
+  button(id='makeUser') Add User
+  br
+  a(href='/addUsers') User Page
+
+block script
+  script(src="../javascripts/main.js")
